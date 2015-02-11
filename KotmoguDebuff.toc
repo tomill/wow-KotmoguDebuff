@@ -1,0 +1,7 @@
+## Interface: 60000
+## Title: Kotmogu Debuff
+## Notes: Show orb color and debuff count on Blizz raid frame
+## Version: 1.0.0
+## Author: Tomill
+
+KotmoguDebuff.lua
