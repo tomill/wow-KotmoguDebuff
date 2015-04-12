@@ -27,6 +27,7 @@ hooksecurefunc("CompactUnitFrame_UpdateDebuffs", function(frame)
     local orbframe = frame.KotmoguDebuff
     if not orbframe then
         orbframe = CreateFrame("Button", nil, frame)
+        orbframe:EnableMouse(false)
         
         local texture = orbframe:CreateTexture(nil, "OVERLAY")
         texture:SetAllPoints(orbframe)
