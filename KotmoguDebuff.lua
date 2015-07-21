@@ -1,10 +1,8 @@
 LoadAddOn("Blizzard_CompactRaidFrames")
 
 local orbIDs = {
-    -- i hate cyan
+    -- blue instead of cyan
     -- [121164] = { color = "Blue",   r = 0.0039, g = 0.8745, b = 0.8431, texture = "Interface\\MiniMap\\TempleofKotmogu_ball_cyan.blp" },
-    
-    -- little blueish blue
     [121164] = { color = "Blue",   r = 0.0029, g = 0.6745, b = 1     , texture = "Interface\\MiniMap\\TempleofKotmogu_ball_cyan.blp" },
     
     [121175] = { color = "Purple", r = 0.7490, g = 0     , b = 1     , texture = "Interface\\MiniMap\\TempleofKotmogu_ball_purple.blp" },
@@ -27,6 +25,7 @@ hooksecurefunc("CompactUnitFrame_UpdateDebuffs", function(frame)
     local orbframe = frame.KotmoguDebuff
     if not orbframe then
         orbframe = CreateFrame("Button", nil, frame)
+        orbframe:EnableMouse(false)
         
         local texture = orbframe:CreateTexture(nil, "OVERLAY")
         texture:SetAllPoints(orbframe)
