@@ -18,6 +18,9 @@ end)
 
 hooksecurefunc("CompactUnitFrame_UpdateDebuffs", function(frame)
     if (not UnitInBattleground("player") or not UnitIsPlayer(frame.displayedUnit) or not frame.optionTable.displayDebuffs) then
+        if frame.KotmoguDebuff then
+            frame.KotmoguDebuff:Hide()
+        end
         return
     end 
     
