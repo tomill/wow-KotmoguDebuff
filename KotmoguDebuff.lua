@@ -47,7 +47,7 @@ hooksecurefunc("CompactUnitFrame_UpdateDebuffs", function(frame)
     end
     
     -- if unit has orb
-    local _, _, _, _, _, _, _, _, _, _, spellId, _, _, _, _, val2 = UnitDebuff(frame.displayedUnit, "Orb of Power")
+    local _, _, _, _, _, _, _, _, _, _, spellId, _, _, _, _, _, _, val2 = UnitDebuff(frame.displayedUnit, "Orb of Power")
     if not spellId then
         orbframe:Hide()
         return
