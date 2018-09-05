@@ -1,0 +1,7 @@
+package-as: KotmoguDebuff
+
+enable-nolib-creation: no
+
+ignore:
+- README.md
+- images

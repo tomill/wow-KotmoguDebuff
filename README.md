@@ -1,1 +1,3 @@
-Show "Orb of Power" count with the orb color on Blizzard raid frame. (like Battleground Target)
+# Raid Frame: Kotmogu Debuff
+
+Show "Orb of Power" numbers on Blizzard raid frame.
